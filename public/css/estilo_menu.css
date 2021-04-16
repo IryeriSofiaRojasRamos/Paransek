@@ -8,18 +8,16 @@ a{
 	color: black;
 }
 
-
 body{
+	background-repeat: no-repeat;
 	font-family: arial;
-	background-image: url("../fondos/presentacion.jpg");
+	background-image: url("../fondos/logo.png");
 	background-size: 100%;
 }
 
 ul{
 	list-style: none;
 }
-
-
 
 img{
 	width: 60px;
@@ -31,8 +29,9 @@ input[type="checkbox"]
 }
 
 nav{
-	background-color: rgba(16, 16, 16, .5);
-	width: 350px;
+	background-color:rgba(208, 230, 165, .5); 
+	/*background-color:rgba(82, 192, 211, 0.5);verde*/
+	width: 297px;
 	height: 100%;
 	left: -350px;
 	position: absolute;
@@ -53,12 +52,13 @@ ul{
 a{
 	display: block;
 	padding: 20px 5px;
-	color: white;
+	/*color: rgb(194, 0, 81); /*ROSA*/
+	color: rgb(2, 4, 121);
 }
 
 a:hover{
-	background-color: rgb(176, 224, 230);
-	color: black;
+	background-color: rgb(2, 4, 121);
+	color: rgb(255, 255, 255);
 }
 
 label{
@@ -66,7 +66,6 @@ label{
 	position: absolute;
 	z-index: 1;
 }
-
 
 a{
 	text-align: center;

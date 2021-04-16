@@ -4,9 +4,11 @@
 
 	<head>
 		<meta charset="utf-8">
-		<link rel="icon" type="image/png" href="./fondos/icono.jpg" />
+		<link rel="icon" type="image/jpg" href="./fondos/icono.jpg"/>
 		
-		<link rel="stylesheet" type="text/css" href="./css/estilo_menu.css">
+		<!--HOLAS DE ESTILO-->
+			<link href="{{ asset('./css/estilo_menu.css') }}?v=<?php echo(rand()); ?>" rel="stylesheet">
+		
 		<title>PARANSEK</title>
 	</head>
 
@@ -15,7 +17,7 @@
 		<input type="checkbox" id="check">
 		
 		<label for="check">
-			<img src="./imagenes/menu.png">
+			<img src="./imagenes/menugif.gif">
 		</label>
 		
 		<nav>
@@ -39,8 +41,8 @@
 				<li><a href="">Tarjeteros</a></li>
 				<li><a href="">Contactos</a></li>
 			</ul>
-		
 		</nav>
+		
 	</body>
 
 </html>
