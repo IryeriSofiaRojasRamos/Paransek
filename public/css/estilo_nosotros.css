@@ -1,0 +1,113 @@
+*{
+	box-sizing: border-box;
+}
+
+.wrapper{
+	background-color: #eee;
+	font-family: sans-serif;
+	padding: 3rem 0;
+	text-align: center;
+	display: block;
+	overflow: hidden;
+}
+
+.border{
+	width: 80%;
+	height: 1px;
+	background-color: #d3d3d3;
+	margin: 0 auto;
+}
+
+.right{
+	padding: 0 3%;
+	padding-top: 3rem;
+}
+
+.left{
+	padding: 0 3%;
+	padding-bottom: 3rem;
+}
+
+.left::before{
+	content: '';
+	background: url(../imagenes/derecha.svg) center center no-repeat;
+	display: block;
+	height: 7rem;
+	margin: 0 auto;
+}
+
+
+.right::before{
+	content: '';
+	background: url(../imagenes/izquierda.svg) center center no-repeat;
+	display: block;
+	height: 7rem;
+	margin: 0 auto;
+}
+
+.title{
+	font-size: 2rem;
+	margin: 1rem 0;
+	font-weight: 700;
+	letter-spacing: normal;
+}
+
+.desc{
+	margin: 1.8rem 2rem;
+}
+
+
+.btn{
+	display: inline-block;
+	background-color: #8a8a8a;
+	color: #fff;
+	border-radius: 35px;
+	cursor: pointer;
+	font-weight: 600;
+	outline: none;
+	padding: .5rem 1.5rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: all ease-in-out .3s;
+}
+
+
+.btn:hover{
+	opacity: .7;
+	color: #000;
+}
+
+.btn:focus{
+	border: 1px solid #fff;
+}
+
+@media (min-width: 768px){
+	.title{
+		font-size: 2.5rem;
+		margin: 1.5rem 0;
+	}
+
+	.desc{
+		font-size: 1.7rem;
+	}
+	.col{
+		margin: 0 auto;
+		max-width: 1260px;
+	}
+	.left, .right{
+		float: left;
+		padding: 0 3%;
+		padding-bottom: 2.5rem;
+		text-align: center;
+		width: 49.5%
+	}
+	.right{
+		border-left: .1rem solid #d3d3d3;
+	}
+	.left{
+		border-bottom: none;
+	}
+	.border{
+		height: 0;
+	}
+}
