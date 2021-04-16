@@ -20,22 +20,24 @@
 		
 		<nav>
 			<ul>
+
+                @if (Route::has('login'))
+            	   @auth
+						<li><a href="{{ url('/home') }}">Home</a></li>
+					@else
+						<li><a href="{{ route('login') }}">Iniciar Sesión</a></li>
+
+					@if (Route::has('register'))
+						<li><a href="{{ route('register') }}">Registrarme</a><l/i>
+					@endif
+                	@endauth
+                @endif
+
 				<li><a href="">Paransek</a></li>
 				<li><a href="">Atrapasueños</a></li>
 				<li><a href="">Bolsas de compras</a></li>
 				<li><a href="">Tarjeteros</a></li>
 				<li><a href="">Contactos</a></li>
-                @if (Route::has('login'))
-                    @auth
-                        <li><a href="{{ url('/home') }}">Home</a></li>
-                    @else
-                        <li><a href="{{ route('login') }}">Iniciar Sesión</a></li>
-
-                        @if (Route::has('register'))
-                            <li><a href="{{ route('register') }}">Registrarme</a><l/i>
-                        @endif
-                    @endauth
-                @endif
 			</ul>
 		
 		</nav>
