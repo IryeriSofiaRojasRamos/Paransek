@@ -1,0 +1,22 @@
+body{
+   background-color: #86E3CE;
+   margin-top: 40px;
+}
+
+.card-header{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Vegur', 'PT Sans', 'Verdana', 'sans-serif';
+    background-color: #D0E6A5;
+}
+
+.card-body{
+    background-color: #e4f7c0c9;
+}
+
+input{
+    text-align: center;
+    margin-top: 25px;
+}
+
